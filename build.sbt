@@ -17,3 +17,9 @@ libraryDependencies += "org.awaitility" % "awaitility" % "2.0.0" % Test
 
 // Make verbose tests
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
+
+enablePlugins(DebianPlugin)
+maintainer := "Kevin Garay <kevingcfcb88@gmail.com>"
+packageSummary := "My Custom package"
+packageDescription := "Package"
+
